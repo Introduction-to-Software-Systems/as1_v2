@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body id="body">
+  <header>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_item"><a class="nav_link" href="index.html">Home</a></li>
+        <li class="nav_item"><a class="nav_link" href="about.html">About</a></li>
+        <li class="nav_item"><a class="nav_link" href="edu.html">Education</a></li>
+        <li class="nav_item"><a class="nav_link" href="ach.html">Achievements</a></li>
+        <li class="nav_item"><a class="nav_link" href="skills.html">Skills</a></li>
+        <li class="nav_item"><a class="nav_link" href="blog.html">Blog</a></li>
+      </ul>
+
+    </nav>
+  </header>
+  <div class="toggle-container">
+    <div id="toggle">
+      <div class="indicator"></div>
+    </div>
+  </div>
+  <div class="content-wrapper">
+    <div class="intro-text">
+      <h2>Come with me to  <span class="auto-type"></span></h2>
+      <br>
+      <p>
+        Welcome to my Website, a space where I share stories of my life's milestones and stumbling blocks.
+        A place where I talk about my skills, interests, and passion.
+        Explore these pages and join me in my journey to learn and explore.
+        <br><br>
+
+      </p>
+
+      <a href="javascript:void(0);" onclick="window.open('Resume.pdf');" id="localFileLink">Open Resume</a>
+      <button class="btn btn-color-2" onclick="window.open('Resume.pdf')">See Resume</button>
+    </div>
+
+    <div class="image-container">
+      <img src="profile-pic (7).png" alt="A picture of me">
+    </div>
+  </div>
+  <footer>
+    <p>Connect with me</p>
+    <a id="github" href="https://github.com/harmoniccomputing" target="_blank"><ion-icon
+        name="logo-github"></ion-icon></a>
+    <a id="pinterest" href="https://in.pinterest.com/idynamism/" target="_blank"><ion-icon
+        name="logo-pinterest"></ion-icon></a>
+    <a id="email" href="mailto:vishakha.agrawal@students.iiit.ac.in" target="_blank"><ion-icon
+        name="mail-outline"></ion-icon></a>
+    <br><br>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["Explore", "Innovate", "Create"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true
+    });
+  </script>
+  <script src="home.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
